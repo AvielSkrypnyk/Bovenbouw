@@ -1,0 +1,122 @@
+/* Basic Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styling */
+nav {
+    background-color: white;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 20px auto;
+    border: black solid 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border: 1px solid black;
+    display: inline-block;
+}
+
+nav li:last-child {
+    margin-left: auto;
+}
+
+/* Main Content Styling */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px;
+    text-align: left;
+    border: black 1px solid;
+}
+
+/* Typography */
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+/* Layout for the Game Info Section */
+.game-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Left Side: Game Description */
+.game-description {
+    width: 65%;
+}
+
+/* Right Side: Game Details */
+.game-details {
+    width: 30%;
+    border: black 1px solid;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Tags Section Styling */
+.tags {
+    padding-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.tags p {
+    padding: 5px 15px;
+    border: black 1px solid;
+    font-size: 14px;
+}
+
+/* Screenshots Section Styling */
+.screenshots {
+    display: flex;
+    padding-top: 10px;
+    gap: 5px;
+}
+
+.screenshots img {
+    height: 100px;
+    border: black 1px solid;
+}
+
+/* System Requirements & Reviews */
+section {
+    border: black 1px solid;
+    padding: 15px;
+    margin-top: 15px;
+}
+.systeemeisen ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Reviews Section */
+.recensies .review {
+    margin-bottom: 10px;
+    font-style: italic;
+}
