@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cataloguspagina voor Game Picker">
+    <meta name="keywords" content="game, picker, review, systeemeisen, action RPG">
+    <title>Game-picker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="main-navigation-bar">
+        <ul>
+            <li><a href="elden-ring.html">Elden Ring</a></li>
+            <li><a href="cult-of-the-lamb.html">Cult of the Lamb</a></li>
+            <li><a href="league-of-legends.html">League of Legends</a></li>
+            <li><a href="game-picker.html">Game Picker</a></li>
+        </ul>
+    </nav>
+
+    <nav class="filter-navigation-bar">
+        <ul>
+            <div>
+                <span>
+                    <label for="genre">Genre:</label>
+                    <select id="genre-dropdown" name="genre"></select>
+                </span>
+                <span><button type="button" id="okGenreButton">OK</button></span>
+            </div>
+            <div>
+                <span>
+                    <label for="price">Prijs lager dan:</label>
+                    <input type="number" id="priceInput" name="price" min="0">
+                </span>
+                <span><button type="button" id="okPriceButton">OK</button></span>
+            </div>
+            <div>
+                <span>
+                    <label for="rating">Rating hoger dan:</label>
+                    <input type="number" id="ratingInput" name="rating" max="5" min="0">
+                </span>
+                <span><button type="button" id="okRatingButton">OK</button></span>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="total-overview" class="game-list"></div>
+        <button type="button" id="calculatePriceButton">Bereken prijs</button>
+
+        <div id="shopping-cart" class="shopping-cart" style="display: none;">
+            <h2>Winkelmandje</h2>
+            <div id="cart-items"></div>
+            <p id="total-price"></p>
+            <button type="button" id="backButton">Terug</button>
+        </div>
+    </main>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

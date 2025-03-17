@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3 - Buttons</title>
+    <style>
+        body {
+            background-color: grey;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .panel {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        #btn1 { background-color: green; }
+        #btn2 { background-color: red; }
+        #btn3 { background-color: blue; }
+
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <button id="btn1" onclick="changeBackgroundColor('green')">Button 1</button>
+        <button id="btn2" onclick="changeBackgroundColor('red')">Button 2</button>
+        <button id="btn3" onclick="changeBackgroundColor('blue')">Button 3</button>
+    </div>
+
+    <script>
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>
