@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 5 - Leeftijdsfilter</title>
+    <style>
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            background-color: grey;
+            padding: 20px;
+            border-radius: 10px;
+            width: 1300px;
+            height: auto;
+            overflow-y: auto;
+        }
+
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .person {
+           padding: 30px;
+        }
+
+        #age, #filterButton {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <input type="number" id="age" placeholder="Filter op leeftijd">
+        <button id="filterButton">Filter</button>
+        <div id="grid">
+
+        </div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
