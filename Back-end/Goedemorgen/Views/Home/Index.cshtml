@@ -1,0 +1,28 @@
+﻿@{
+    var (greeting, backgroundImage) = GetGreetingAndBackgroundImage(DateTime.Now);
+    ViewData["Title"] = "Home Page";
+    ViewData["BackgroundImage"] = backgroundImage;
+}
+
+@functions
+{
+    static (string greeting, string backgroundImage) GetGreetingAndBackgroundImage(DateTime currentTime)
+    {
+        var hour = currentTime.Hour;
+
+        return hour switch
+        {
+            >= 6 and < 12 => ("Goede morgen", "/images/morning.png"),
+            >= 12 and < 18 => ("Goede middag", "/images/afternoon.png"),
+            >= 18 and < 24 => ("Goede avond", "/images/evening.png"),
+            _ => ("Goede nacht", "/images/night.png")
+        };
+    }
+}
+
+<div class="greeting-container">
+    <div class="greeting">
+        <h1>@greeting</h1>
+        <h1>Het is nu @($"{DateTime.Now:HH:mm}")</h1>
+    </div>
+</div>

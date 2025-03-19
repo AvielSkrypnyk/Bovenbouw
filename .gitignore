@@ -1,1 +1,56 @@
-.Ds_Store
+# Ignore Visual Studio-specific files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build output and package directories
+bin/
+obj/
+*.pdb
+
+# Ignore JetBrains IDE-specific files
+.idea/
+*.sln.iml
+
+# Ignore .NET dependencies and logs
+*.log
+logs/
+npm-debug.log
+yarn-error.log
+
+# Ignore temporary files and caches
+*.tmp
+*.cache
+*.ide
+
+# Ignore user secrets
+secrets.json
+appsettings.*.json
+appsettings.Development.json
+
+# Ignore dependency directories
+node_modules/
+packages/
+
+# Ignore Rider-specific files
+.idea/
+*.sln.iml
+.idea_modules/
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/dictionaries/
+/.idea/libraries/
+/.idea/assetWizardSettings.xml
+/.idea/dotnettools/
+
+# Ignore Resharper files
+_ReSharper.Caches/
+
+# Ignore Docker build artifacts
+docker-compose.override.yml
+.env
+
+# Ignore macOS-specific files
+.DS_Store
