@@ -1,4 +1,4 @@
-# Bowenbouw
+# Bovenbouw
 
 ## About Me
 Hi! I'm a student passionate about learning front-end development. I'm working on various projects to improve my skills in HTML, CSS, and JavaScript. This repository contains my school assignments and personal projects.
